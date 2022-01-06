@@ -1,0 +1,30 @@
+h1,
+h2 {
+  font-weight: normal;
+}
+
+.App {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile {
+  display: flex;
+}
+
+.profile__item {
+  border: 10px solid #e7e7e7;
+  border-radius: 20px;
+  padding: 40px 40px 40px 40px;
+}
+
+.profile__item:first-child {
+  margin-right: 50px;
+}
+
+.profile__greeting {
+  margin-bottom: 10px;
+}
