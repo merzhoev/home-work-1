@@ -1,17 +1,5 @@
-const getNormalizedDate = (date) => {
-  return {
-    day: date.getDate(),
-    month: monthToStr(date.getMonth()),
-    year: date.getFullYear()
-  }
-}
-
-function monthToStr(num) {
-  return num > 12 || num < 1
-    ? null
-    : 'январь,февраль,март,апрель,май,июнь,июль,август,сентябрь,октябрь,ноябрь,декабрь'.split(
-      ','
-    )[num - 1];
-}
+const getNormalizedDate = (date) => (
+  date.toLocaleDateString('ru-RU', { year: 'numeric', month: 'long', day: 'numeric' })
+);
 
 export default getNormalizedDate;

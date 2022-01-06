@@ -4,15 +4,17 @@ import getNormalizedDate from "../usefully/normalizedDate";
 class Profile extends React.Component {
   render() {
     const { name, registredAt } = this.props;
-    const { day, month, year } = getNormalizedDate(registredAt);
+
+    const firstName = name.split(" ")[0];
+    const normalizedDate = getNormalizedDate(registredAt);
 
     return (
       <div className="profile__item">
         <h1 className="profile__greeting">
-          Привет, <b>{name}!</b>
+          Привет, <b>{firstName}!</b>
         </h1>
         <h2 className="profile__reg-date">
-          Дата регистрации: {`${day} ${month} ${year}`}
+          Дата регистрации: {normalizedDate}
         </h2>
       </div>
     );

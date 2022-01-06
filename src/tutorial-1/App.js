@@ -6,8 +6,8 @@ function App() {
   return (
     <div className="App">
       <div className="profile">
-        <ProfileFn name="Alex" registredAt={new Date(2001, 8, 3)} />
-        <ProfileClass name="Вася" registredAt={new Date(2021, 1, 22)} />
+        <ProfileFn name="Alex Margarin" registredAt={new Date(2001, 7, 3)} />
+        <ProfileClass name="Вася Пупкин" registredAt={new Date(2021, 5, 22)} />
       </div>
     </div>
   );
