@@ -1,0 +1,10 @@
+input,
+button {
+  font-size: 18px;
+  padding: 10px;
+}
+
+.auth__email,
+.auth__password {
+  margin-bottom: 5px;
+}
