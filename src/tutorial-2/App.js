@@ -5,9 +5,9 @@ function App() {
   let password = '';
 
   function handleInput(e) {
-    if (e.target.type === 'text') {
+    if (e.target.name === 'email') {
       email = e.target.value;
-    } else {
+    } else if (e.target.name === 'password') {
       password = e.target.value;
     }
   }
@@ -19,8 +19,10 @@ function App() {
       alert('Заполните поля');
     } else {
       console.log({ email, password });
-      e.target[0].value = e.target[1].value = '';
-      email = password = '';
+
+      e.target.reset();
+      email = '';
+      password = '';
     }
   }
 
@@ -28,10 +30,10 @@ function App() {
     <div className="auth">
       <form onSubmit={handleSubmit}>
         <div className="auth__email">
-          <input onChange={handleInput} type="text" />
+          <input onChange={handleInput} name="email" type="text" />
         </div>
         <div className="auth__password">
-          <input onChange={handleInput} type="password" />
+          <input onChange={handleInput} name="password" type="password" />
         </div>
         <button type="submit">Войти</button>
       </form>
