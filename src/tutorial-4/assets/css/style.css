@@ -1,0 +1,13 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+input,
+.add-task button {
+  font-size: 18px;
+  padding: 10px;
+}
+
+button {
+  cursor: pointer;
+}
