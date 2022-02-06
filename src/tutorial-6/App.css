@@ -1,0 +1,36 @@
+.wrapper {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.reviews,
+.feedback {
+  padding: 20px;
+  border: 1px solid #e7e7e7;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.reviews__title {
+  font-weight: 500;
+}
+
+.feedback__title {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.text-field {
+  width: 100%;
+  margin-bottom: 15px !important;
+}
+
+.btn {
+  width: 100%;
+}
+
+.list-item__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
