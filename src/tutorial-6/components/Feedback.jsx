@@ -8,7 +8,7 @@ function Feedback({ handleInput, addComment, formControl }) {
       <div className="feedback__form">
         <TextField
           onChange={handleInput}
-          value={formControl.nameInput}
+          value={formControl.name}
           name="name"
           className="text-field"
           id="outlined-basic"
@@ -17,7 +17,7 @@ function Feedback({ handleInput, addComment, formControl }) {
         />
         <TextField
           onChange={handleInput}
-          value={formControl.emailInput}
+          value={formControl.email}
           name="email"
           className="text-field"
           id="outlined-basic"
@@ -26,7 +26,7 @@ function Feedback({ handleInput, addComment, formControl }) {
         />
         <TextField
           onChange={handleInput}
-          value={formControl.textInput}
+          value={formControl.text}
           name="text"
           className="text-field"
           id="outlined-multiline-static"

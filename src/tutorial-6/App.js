@@ -9,13 +9,13 @@ import './App.css';
 function App() {
   const [comments, setComments] = React.useState([]);
   const [formControl, setFormControl] = React.useState({
-    nameInput: '',
-    emailInput: '',
-    textInput: '',
+    name: '',
+    email: '',
+    text: '',
   });
 
   const handleInput = (e) => {
-    setFormControl({ ...formControl, [`${e.target.name}Input`]: e.target.value });
+    setFormControl({ ...formControl, [e.target.name]: e.target.value });
   };
 
   const addComment = () => {
@@ -23,14 +23,14 @@ function App() {
     setComments([
       ...comments,
       {
-        fullName: formControl.nameInput,
-        email: formControl.emailInput,
+        fullName: formControl.name,
+        email: formControl.email,
         createdAt: currentDate,
-        text: formControl.textInput,
+        text: formControl.text,
       },
     ]);
 
-    setFormControl({ nameInput: '', emailInput: '', textInput: '' });
+    setFormControl({ name: '', email: '', text: '' });
   };
 
   React.useEffect(() => {
