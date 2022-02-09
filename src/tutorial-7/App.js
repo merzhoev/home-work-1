@@ -7,6 +7,7 @@ import './App.css';
 
 function App() {
   const { pathname } = window.location;
+  const postId = pathname.split('/post/')[1];
 
   return (
     <div className="App">
@@ -89,7 +90,7 @@ function App() {
             </Card>
           </Col>
         </Row>)}
-      {pathname.includes('/post/') && <Article id={pathname.split('/').slice(-1)} />}
+      {postId && <Article id={postId} />}
       {pathname === "/about" && (
         <Card>
           <Card.Body>Это мой личный сайт!</Card.Body>
