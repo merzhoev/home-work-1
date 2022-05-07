@@ -2,7 +2,47 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-bottom: 20px;
+  padding: 20px 0;
   margin-bottom: 20px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+footer {
+  padding: 20px 0;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.App {
+  max-width: 992px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content {
+  flex-grow: 1;
+}
+
+.mb-30 {
+  margin-bottom: 30px;
+}
+
+.full-article {
+  max-width: 520px;
+  background-color: #fff;
+  padding: 30px;
+}
+
+.full-article__title,
+.full-article__img {
+  margin-bottom: 10px;
+}
+
+.full-article__text {
+  margin-bottom: 20px;
 }
