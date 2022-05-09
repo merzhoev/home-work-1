@@ -5,25 +5,26 @@ import Home from './pages/Home';
 import About from './pages/About';
 import NotFound from './pages/NotFound';
 import FullArticle from './pages/FullArticle';
+import Login from './pages/Login';
+import Profile from './pages/Profile';
 
-import Header from './components/Header';
-import Footer from './components/Footer';
+import Layout from './components/Layout';
 
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <Header />
-      <div className="content">
-        <Routes>
-          <Route path="/" element={<Home />}></Route>
-          <Route path="/about" element={<About />}></Route>
-          <Route path="/post/:id" element={<FullArticle />}></Route>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="about" element={<About />} />
+          <Route path="post/:id" element={<FullArticle />} />
+          <Route path="login" element={<Login />} />
+          <Route path="profile" element={<Profile />} />
           <Route path="*" element={<NotFound />} />
-        </Routes>
-      </div>
-      <Footer />
+        </Route>
+      </Routes>
     </div>
   );
 }

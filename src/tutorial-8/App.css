@@ -1,0 +1,19 @@
+.wrapper {
+  max-width: 576px;
+  padding: 50px;
+  margin: 0 auto;
+}
+
+.fields {
+  margin-bottom: 20px;
+}
+
+.fields__item {
+  margin-bottom: 20px !important;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
