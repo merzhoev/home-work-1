@@ -10,11 +10,16 @@ function FullArticle() {
   const post = posts.find((item) => item.id === +id);
 
   React.useEffect(() => {
+    let timeoutId;
     if (!post) {
-      setTimeout(() => {
-        navigate('/');
+      timeoutId = setTimeout(() => {
+        navigate('/', { replace: true });
       }, 3000);
     }
+
+    return () => {
+      clearTimeout(timeoutId);
+    };
   }, []);
 
   if (!post) {

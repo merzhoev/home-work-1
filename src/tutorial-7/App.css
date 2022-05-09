@@ -46,3 +46,8 @@ body {
 .full-article__text {
   margin-bottom: 20px;
 }
+
+.login-form {
+  width: 400px;
+  margin: 0 auto;
+}
