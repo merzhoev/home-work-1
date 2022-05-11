@@ -2,6 +2,7 @@ import React from 'react';
 
 function UserInfo({
   isExist,
+  avatar_url,
   name,
   login,
   bio,
@@ -17,7 +18,7 @@ function UserInfo({
         <>
           <div className="app-user_info">
             <div className="app-user_image">
-              <img src="./assets/img/avatar.png" alt="" />
+              <img src={avatar_url} alt="avatar" />
             </div>
             <div className="app-user_data">
               <h1 className="app-user_name">

@@ -16,9 +16,8 @@ function App() {
       setIsLoading(true);
 
       const { data } = await axios.get(`https://api.github.com/users/${value}`);
-      const { name, login, bio, public_repos, followers, following, location, blog } = data;
-
-      setUser({ name, login, bio, public_repos, followers, following, location, blog, isExist: true });
+      const { avatar_url, name, login, bio, public_repos, followers, following, location, blog } = data;
+      setUser({ avatar_url, name, login, bio, public_repos, followers, following, location, blog, isExist: true });
 
       setIsLoading(false);
     } catch (err) {

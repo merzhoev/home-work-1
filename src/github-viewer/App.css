@@ -93,7 +93,15 @@ body {
 }
 
 .app-user_image {
+  width: 100px;
+  height: 100px;
   margin-right: 24px;
+}
+
+.app-user_image img {
+  width: inherit;
+  height: inherit;
+  border-radius: 50%;
 }
 
 .app-user_name {
