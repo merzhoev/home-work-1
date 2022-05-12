@@ -7,7 +7,6 @@ import UserInfo from './components/UserInfo';
 import './App.css'
 
 function App() {
-  console.log('render');
   const [user, setUser] = React.useState(null);
   const [isLoading, setIsLoading] = React.useState(false);
 

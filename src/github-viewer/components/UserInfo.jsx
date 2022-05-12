@@ -45,7 +45,7 @@ function UserInfo({
           <ul className="app-user_location">
             <li className="app-user_location-item">{location}</li>
             <li className="app-user_location-item">
-              <a href="http://archakov.im">{blog}</a>
+              <a href={blog}>{blog}</a>
             </li>
           </ul>
         </>
